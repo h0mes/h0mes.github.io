@@ -24,7 +24,7 @@ var content_perec = ["to the north, nothing", "to the east, nothing", "to the so
 var content_house = ["A house of flesh", "in the palm of my hand", "using science", "inahbited by primitive creatures" ];
 
 //set content variable to one array
-var content = content_perec;
+var content = content_rilke;
 //find the tag on the html page to put text into
 var text_area = document.getElementById("compass_content");
 var timer = 0;
@@ -34,7 +34,7 @@ var timer = 0;
 
         if(compassHeading > 0 && compassHeading <=90) {
             //text_area.innerHTML = source[Math.floor(Math.random()*source.length)];
-            text_area.innerHTML = "to the north, nothing";
+            text_area.innerHTML = "Throw the emptiness";
 
         }
          if(compassHeading > 90 && compassHeading <=180) {
@@ -47,12 +47,12 @@ var timer = 0;
 
         }
          if(compassHeading > 180 && compassHeading <=270) {
-            text_area.innerHTML = "to the west, nothing";
+            text_area.innerHTML = "out of your arms";
       
         }
          if(compassHeading > 270 && compassHeading <=360) {
           
-            text_area.innerHTML = "to the south, nothing";
+            text_area.innerHTML = "to add to the spaces";
             
             
         }
