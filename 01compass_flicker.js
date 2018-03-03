@@ -1,3 +1,10 @@
+//add sound
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('assets/home-no-6-excerpt.mp3');
+}
+
+
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
         heading = e.webkitCompassHeading;
@@ -18,13 +25,10 @@ oriented = function(e) {
 
 
 //create arrays of possible content	
-var content_rilke = ["Throw the emptiness", "out of your arms", "to add to the spaces", "we breathe", "maybe the birds", "will feel the expansion", "of air", "in more intimate flight" ];
-var content_stein = ["Rose", "is a rose", "is a", "rose is a" ];
-var content_perec = ["to the north, nothing", "to the east, nothing", "to the south, nothing", "to the west, nothing" ];
-var content_house = ["A house of flesh", "in the palm of my hand", "using science", "inahbited by primitive creatures" ];
+var content_home6 = ["Motor passes on the new road, behind.", "Years ago, I walked onto the porch \nwith mother and father. Some wooden slats\nframed gaping holes in the floor.", "I have a video of dad\nbouncing the tenuous wooden floorboard,\nstomping to flex the beam.", " One wooden chair I could see through the back door window\n faced me,", "facing South." ];
 
 //set content variable to one array
-var content = content_rilke;
+var content = content_home6;
 //find the tag on the html page to put text into
 var text_area = document.getElementById("compass_content");
 var timer = 0;
@@ -34,25 +38,29 @@ var timer = 0;
 
         if(compassHeading > 0 && compassHeading <=90) {
             //text_area.innerHTML = source[Math.floor(Math.random()*source.length)];
-            text_area.innerHTML = "Throw the emptiness";
+            text_area.innerHTML = "Rain this day. Some ice, actually.\nThe shed door creaks.";
 
         }
          if(compassHeading > 90 && compassHeading <=180) {
            
             timer++;
             if(timer == 15) {
-            text_area.innerHTML = content_rilke[Math.floor(Math.random() * content_rilke.length)];
+            text_area.innerHTML = content_home6[Math.floor(Math.random() * content_home6.length)];
             timer = 0;
         }
 
         }
          if(compassHeading > 180 && compassHeading <=270) {
-            text_area.innerHTML = "out of your arms";
+            text_area.innerHTML = "A story of kitchen floor holes \nleft to grow \n under a refrigerator. Bolted to the wall, \n it would lean and lean but not fall.";
+            function setup() {
+                 mySound.setVolume(0.1);
+                 mySound.play();
+            }
       
         }
          if(compassHeading > 270 && compassHeading <=360) {
           
-            text_area.innerHTML = "to add to the spaces";
+            text_area.innerHTML = "This one’s most recently habited.";
             
             
         }
