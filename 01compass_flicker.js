@@ -25,7 +25,7 @@ oriented = function(e) {
 
 
 //create arrays of possible content	
-var content_home6 = ["Motor passes on the new road, behind.", "Years ago, I walked onto the porch \nwith mother and father. Some wooden slats\nframed gaping holes in the floor.", "I have a video of dad\nbouncing the tenuous wooden floorboard,\nstomping to flex the beam.", " One wooden chair I could see through the back door window\n faced me,", "facing South." ];
+var content_home6 = ["Motor passes on the new road, behind.", "Years ago, I walked onto the porch \n with mother and father. Some wooden slats\n framed gaping holes in the floor.", "I have a video of dad\n bouncing the tenuous wooden floorboard,\n stomping to flex the beam.", " One wooden chair I could see through the back door window\n  faced me,", "facing South." ];
 
 //set content variable to one array
 var content = content_home6;
@@ -38,7 +38,7 @@ var timer = 0;
 
         if(compassHeading > 0 && compassHeading <=90) {
             //text_area.innerHTML = source[Math.floor(Math.random()*source.length)];
-            text_area.innerHTML = "Rain this day. Some ice, actually.\nThe shed door creaks.";
+            text_area.innerHTML = compassHeading + "Rain this day. Some ice, actually.  The shed door creaks.";
 
         }
          if(compassHeading > 90 && compassHeading <=180) {
@@ -51,7 +51,7 @@ var timer = 0;
 
         }
          if(compassHeading > 180 && compassHeading <=270) {
-            text_area.innerHTML = "A story of kitchen floor holes \nleft to grow \n under a refrigerator. Bolted to the wall, \n it would lean and lean but not fall.";
+            text_area.innerHTML = "A story of kitchen floor holes \n left to grow \n  under a refrigerator. Bolted to the wall, \n  it would lean and lean but not fall.";
             function setup() {
                  mySound.setVolume(0.1);
                  mySound.play();
