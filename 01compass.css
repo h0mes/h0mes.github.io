@@ -4,8 +4,6 @@ http://www.w3schools.com/css/
 */
 
 #compass_content {
-	body {
-    background-color: #2B24E1;
 	/*set the font face and style here*/
 	font-family: menlo, monospace;
 	/*set the font size here (3vmax = 30% of viewing space)*/
@@ -18,5 +16,5 @@ http://www.w3schools.com/css/
 	width: 80%;
 	/*this centers the text box*/
 	margin: 35% auto;
-}
+    background-color: #2B24E1;
 }
