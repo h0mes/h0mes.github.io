@@ -111,7 +111,7 @@ var text_area = document.getElementById("compass_content");
     }
 
         if(compassHeading >= 143 && compassHeading < 152) {
-             text_area.innerHTML = "There had been \n gabled second floor windows, green roof \n back porch covered, front porch open \n windows flanked the storm door \n a few steps up from the foundation. ";
+             text_area.innerHTML = "5.2 There had been \n gabled second floor windows, green roof \n back porch covered, front porch open \n windows flanked the storm door \n a few steps up from the foundation. ";
     }
 
         if(compassHeading >= 152 && compassHeading < 161) {
@@ -131,11 +131,11 @@ var text_area = document.getElementById("compass_content");
     }
 
         if(compassHeading >= 188 && compassHeading < 197) {
-             text_area.innerHTML = "rain and snow blowing diagonal into close-set second-story eyes,  \n green roof darkening, back porch sagging \n and white paint peeling.";
+             text_area.innerHTML = "5.7 rain and snow blowing diagonal into close-set second-story eyes,  \n green roof darkening, back porch sagging \n and white paint peeling.";
     }
 
         if(compassHeading >= 197 && compassHeading < 206) {
-             text_area.innerHTML = "In its absence, I can see across the clearing  \n to where the trees start, ";
+             text_area.innerHTML = "5.8 In its absence, I can see across the clearing  \n to where the trees start, ";
     }
 
         if(compassHeading >= 206 && compassHeading < 215) {
