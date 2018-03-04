@@ -1,9 +1,3 @@
-//add sound
-function preload() {
-  soundFormats('mp3', 'ogg');
-  mySound = loadSound('assets/home-no-6-excerpt.mp3');
-}
-
 
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
@@ -38,7 +32,7 @@ var timer = 0;
 
         if(compassHeading > 0 && compassHeading <=90) {
             //text_area.innerHTML = source[Math.floor(Math.random()*source.length)];
-            text_area.innerHTML = compassHeading + "Rain this day. Some ice, actually.  The shed door creaks.";
+            text_area.innerHTML = "Rain this day. Some ice, actually.  The shed door creaks.";
 
         }
          if(compassHeading > 90 && compassHeading <=180) {
