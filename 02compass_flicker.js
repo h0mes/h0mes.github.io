@@ -26,7 +26,7 @@ var content = content_home6;
 //find the tag on the html page to put text into
 var text_area = document.getElementById("compass_content");
 
-    function myOrientation(){
+function myOrientation(){
         //text_area.innerHTML = compassdir;
          //NORTHWEST h0me no. 1
         if(compassHeading >= 323 && compassHeading < 332) {
@@ -108,6 +108,7 @@ var text_area = document.getElementById("compass_content");
 
         if(compassHeading >= 130 && compassHeading < 134) {
              text_area.innerHTML = "5.0 five";
+    }
     //SOUTHEAST h0me no. 5
         if(compassHeading >= 134 && compassHeading < 143) {
              text_area.innerHTML = "5.1 Crows in the nearby-but-not-close, at least three";
