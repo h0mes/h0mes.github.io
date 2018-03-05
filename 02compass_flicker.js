@@ -118,11 +118,11 @@ var text_area = document.getElementById("compass_content");
     }
 
         if(compassHeading >= 152 && compassHeading < 161) {
-             text_area.innerHTML = "5.3 Probably raccoons living under there. ";
+             text_area.innerHTML = "5.3 probably raccoons living under there. ";
     }
 
         if(compassHeading >= 161 && compassHeading < 170) {
-             text_area.innerHTML = "5.4 cow is heard lowing a few miles away. \n Pickup truck passes.";
+             text_area.innerHTML = "5.4 Cow is heard lowing a few miles away. \n Pickup truck passes.";
     }
 
         if(compassHeading >= 170 && compassHeading < 179) {
@@ -158,11 +158,11 @@ var text_area = document.getElementById("compass_content");
     }
 
         if(compassHeading >= 242 && compassHeading < 251) {
-             text_area.innerHTML = "6.3 This one’s most recently habited.";
+             text_area.innerHTML = "6.3 Cavities rot the floor open.";
     }
 
         if(compassHeading >= 251 && compassHeading < 260) {
-             text_area.innerHTML = "6.4 Cut of wind. Soft white rain sh.";
+             text_area.innerHTML = "6.4 Wind pushes whistles through propped-open windows.";
     }
 
         if(compassHeading >= 260 && compassHeading < 269) {
