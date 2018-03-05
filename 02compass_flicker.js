@@ -1,4 +1,8 @@
 
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('assets/home-no-6-excerpt.mp3');
+}
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
         heading = e.webkitCompassHeading;
@@ -31,6 +35,10 @@ function myOrientation(){
          //NORTHWEST h0me no. 1
         if(compassHeading >= 323 && compassHeading < 332) {
              text_area.innerHTML = "1.0 one";
+             function setup() {
+                mySound.setVolume(0.1);
+                mySound.play();
+}
     }   
         if(compassHeading >= 332 && compassHeading < 341) {
              text_area.innerHTML = "1.1 indurated, fading earthward faces outwards right up against tremendous velocity:  ";
@@ -189,6 +197,6 @@ function myOrientation(){
         if(compassHeading >= 305 && compassHeading < 314) {
              text_area.innerHTML = " ";
     }
-	}
+}
 
 
