@@ -39,7 +39,7 @@ var text_area = document.getElementById("compass_content");
              text_area.innerHTML = "1.2 100 years of holding tilts it \n 10 degrees into earth. soft \n mossed-over steps lead to the side door. \n Front stairs chipped off, muted.";
     }   
         if(compassHeading >= 350 && compassHeading < 359) {
-             text_area.innerHTML = "1.3 Mushy wooden floors don’t creak.";
+             text_area.innerHTML = "1.3 Rotting floorboards would cocoon footsteps.";
     }
         //NORTH
         if(compassHeading >= 359 || compassHeading < 8) {
@@ -66,11 +66,11 @@ var text_area = document.getElementById("compass_content");
              text_area.innerHTML = "1.9 headed East.";
     }
     //h0me no. 4
-        if(compassHeading >= 53 && compassHeading < 62) {
+        if(compassHeading >= 53 && compassHeading < 57) {
              text_area.innerHTML = "4.0 four";
     }
 
-        if(compassHeading >= 53 && compassHeading < 62) {
+        if(compassHeading >= 57 && compassHeading < 62) {
              text_area.innerHTML = "4.1 A tension that draws shoulderblades together contracts cold and static.";
     }        
 
@@ -102,9 +102,12 @@ var text_area = document.getElementById("compass_content");
              text_area.innerHTML = "4.8 Now it sits, cleared of parasitic flora \n and made up like a corpse,";
     }
 
-        if(compassHeading >= 125 && compassHeading < 134) {
+        if(compassHeading >= 125 && compassHeading < 130) {
              text_area.innerHTML = "4.9 facing West.";
     }
+
+        if(compassHeading >= 130 && compassHeading < 134) {
+             text_area.innerHTML = "5.0 five";
     //SOUTHEAST h0me no. 5
         if(compassHeading >= 134 && compassHeading < 143) {
              text_area.innerHTML = "5.1 Crows in the nearby-but-not-close, at least three";
