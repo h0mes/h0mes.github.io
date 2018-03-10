@@ -1,0 +1,3 @@
+[submodule "p5.js-sound"]
+	path = p5.js-sound
+	url = https://github.com/processing/p5.js-sound.git
