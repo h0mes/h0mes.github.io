@@ -6,10 +6,11 @@ oriented = function(e) {
             compassHeading = e.webkitCompassHeading;
         }   else  { 
             compassHeading = e.alpha;
+        }
         //calls function to alter content based on heading
         myOrientation();
     }
-}
+
 //device orientation that can track orientation on space
 	window.addEventListener('deviceorientation', oriented, false);
     
