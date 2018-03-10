@@ -16,12 +16,23 @@ oriented = function(e) {
 //find the tag on the html page to put text into
 var text_area = document.getElementById("compass_content");
 
+
+
 function myOrientation(){
+
+    function textPrint(firstDegree, secondDegree, text_line){
+        if(compassHeading >= firstDegree && compassHeading < secondDegree) {
+             text_area.innerHTML = text_line;}
+
+    //for (; firstDegree >=0 && secondDegree <= 359; secondDegree = firstDegree + 9){    
+    //}
         //text_area.innerHTML = compassdir;
          //NORTHWEST h0me no. 1
-        if(compassHeading >= 323 && compassHeading < 332) {
-             text_area.innerHTML = "1.0 one";
-    }   
+         textPrint(323,332,"1.0 one")
+
+        //if(compassHeading >= 323 && compassHeading < 332) 
+        //{text_area.innerHTML = "1.0 one";}   
+
         if(compassHeading >= 332 && compassHeading < 341) {
              text_area.innerHTML = "1.1 indurated, fading earthward faces outwards right up against tremendous velocity:  ";
     }   
