@@ -27,11 +27,19 @@ function textPrint(firstDegree, secondDegree, text_line)
 function myOrientation(){
         //text_area.innerHTML = compassdir;
          //NORTHWEST h0me no. 1
-        for (; compassHeading >=0 && compassHeading <= 90; index = index + 1){
-            for (; degree_index>=0 && degree_index <=90;)
-                {textPrint(degree_index,degree_index + 9,home_no_1[index]);
-                }
-     }
+        for (; compassHeading >=0 && compassHeading <= 90;){
+            textPrint(0,9,home_no_1[0]);
+            textPrint(9,18,home_no_1[1]);
+            textPrint(18,27,home_no_1[2]);
+            textPrint(27,36,home_no_1[3]);
+            textPrint(36,45,home_no_1[4]);
+            textPrint(45,54,home_no_1[5]);
+            textPrint(54,63,home_no_1[6]);
+            textPrint(63,72,home_no_1[7]);
+            textPrint(72,81,home_no_1[8]);
+            textPrint(81,90,home_no_1[9]);
+        }
+     
 
         //if(compassHeading >= 323 && compassHeading < 332) 
         //{text_area.innerHTML = "1.0 one";}   
