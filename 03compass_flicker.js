@@ -9,7 +9,7 @@ oriented = function(e) {
         //calls function to alter content based on heading
         myOrientation();
     }
-
+}
 //device orientation that can track orientation on space
 	window.addEventListener('deviceorientation', oriented, false);
     
@@ -23,6 +23,7 @@ function myOrientation(){
     function textPrint(firstDegree, secondDegree, text_line){
         if(compassHeading >= firstDegree && compassHeading < secondDegree) {
              text_area.innerHTML = text_line;}
+         }
 
     //for (; firstDegree >=0 && secondDegree <= 359; secondDegree = firstDegree + 9){    
     //}
@@ -109,6 +110,7 @@ function myOrientation(){
 
         if(compassHeading >= 130 && compassHeading < 134) {
              text_area.innerHTML = "5.0 five";
+    }
     //SOUTHEAST h0me no. 5
         if(compassHeading >= 134 && compassHeading < 143) {
              text_area.innerHTML = "5.1 Crows in the nearby-but-not-close, at least three";
