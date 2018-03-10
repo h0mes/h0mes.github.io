@@ -15,21 +15,22 @@ oriented = function(e) {
     
 //find the tag on the html page to put text into
 var text_area = document.getElementById("compass_content");
+var index = 0;
+var degree_index = 0;
+var h0me_no_1 = ["1.0 one", "1.1 indurated, fading earthward faces outwards right up against tremendous velocity:  ", "1.2 100 years of holding tilts it \n 10 degrees into earth. soft \n mossed-over steps lead to the side door. \n Front stairs chipped off, muted.", "1.3 Rotting floorboards would cocoon footsteps.", "1.4 endless whine of motors \n kinetic anxiety of wheels", "1.5 Machines struggle to round the uphill curve.", "1.6 Two sisters lived here back in my childhood. \n Grinning, toothless, white hairs sprouted from \ntheir doughy chins, round and soft.", "1.7 They were ancient, even then.\n Their long skirts and small steps  \nmoving slowly, voices crackling with delight.", "1.8 Cars just fly past, rounding \nthe gap in the mountain where weather changes,", "1.9 headed East."]
 
-
+function textPrint(firstDegree, secondDegree, text_line)
+    {if(compassHeading >= firstDegree && compassHeading < secondDegree) 
+        {text_area.innerHTML = text_line;}}
 
 function myOrientation(){
-
-    function textPrint(firstDegree, secondDegree, text_line){
-        if(compassHeading >= firstDegree && compassHeading < secondDegree) {
-             text_area.innerHTML = text_line;}
-         }
-
-    //for (; firstDegree >=0 && secondDegree <= 359; secondDegree = firstDegree + 9){    
-    //}
         //text_area.innerHTML = compassdir;
          //NORTHWEST h0me no. 1
-         textPrint(323,332,"1.0 one")
+        for (; compassHeading >=0 && compassHeading <= 90; index = index + 1){
+            for (; degree_index>=0 && degree_index <=90;)
+                {textPrint(degree_index,degree_index + 9,home_no_1[index]);
+                }
+     }
 
         //if(compassHeading >= 323 && compassHeading < 332) 
         //{text_area.innerHTML = "1.0 one";}   
