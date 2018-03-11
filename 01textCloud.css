@@ -1,0 +1,21 @@
+/*this code handles visual formatting
+to learn css (cascading style sheets), go here:
+http://www.w3schools.com/css/
+*/
+
+#clouod_content {
+	/*set the font face and style here*/
+	font-family: menlo, monospace;
+	/*set the font size here (3vmax = 30% of viewing space)*/
+	font-size: 4vmax;
+	/*set text color here*/
+	color: #FFFFFF;
+	/* set the text alignment (center, left or right)*/
+	text-align: left;
+	/* set the width of the text box*/
+	width: 80%;
+	/*this centers the text box*/
+	margin: 20% auto;
+	word-wrap: break-word;
+}
+
