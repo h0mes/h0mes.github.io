@@ -1,6 +1,6 @@
 
 function preload() {
-  soundFormats('mp3', 'ogg');
+  soundFormats('ogg');
   forSouth = loadSound('assets/home_no_5_west96k_forSouth.ogg');
   forEast = loadSound('assets/home_no_5_west96k_forEast.ogg');
 }
@@ -50,7 +50,7 @@ function myOrientation(){
  //West flicker       
     if(compassHeading >= 225 && compassHeading < 315) {
         timer++;
-        if(timer % 20 = 0) {
+        if(timer % 20 == 0) {
             i++
         }
         text_area.innerHTML = content_home5[i];
