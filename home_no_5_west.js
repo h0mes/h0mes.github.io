@@ -42,13 +42,13 @@ var i = 0
 }
 
 function myOrientation(){
-        text_area.innerHTML = compassdir;
-        South forSouth.ogg 
+        //text_area.innerHTML = compassdir;
+        //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
         forSouth.play();
     }
 
-East forEast.ogg
+//East forEast.ogg
     if(compassHeading >= 45 && compassHeading < 135) {
         forEast.play();
     }   
