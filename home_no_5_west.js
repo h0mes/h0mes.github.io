@@ -8,7 +8,7 @@ function success() {
 function preload() {
   soundFormats('mp3', 'ogg');
   forSouth = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/ssss.mp3', success);
-  //forEast = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg');
+  forEast = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg');
 }
 
 
