@@ -1,9 +1,4 @@
 
-function preload() {
-  soundFormats('ogg');
-  forSouth = loadSound('assets/home_no_5_west96k_forSouth.ogg');
-  forEast = loadSound('assets/home_no_5_west96k_forEast.ogg');
-}
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
         heading = e.webkitCompassHeading;
@@ -58,3 +53,8 @@ function myOrientation(){
 }
 
 
+function preload() {
+  soundFormats('ogg');
+  forSouth = loadSound('assets/home_no_5_west96k_forSouth.ogg');
+  forEast = loadSound('assets/home_no_5_west96k_forEast.ogg');
+}
