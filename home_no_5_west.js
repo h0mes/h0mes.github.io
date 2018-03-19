@@ -1,8 +1,8 @@
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  forSouth = loadSound('assets/home_no_5_west96k_forSouth.ogg');
-  forEast = loadSound('assets/home_no_5_west96k_forEast.ogg');
+  forSouth = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forSouth.ogg');
+  forEast = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg');
 }
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
