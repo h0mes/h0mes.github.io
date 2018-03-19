@@ -1,16 +1,15 @@
-var myBody = document.getElementsByTagName("body");
+// var myBody = document.getElementsByTagName("body");
 
-function success() {
-    myBody[0].style.backgroundColor = "#000000";
-    console.log("hiiiii");
-}
+// function success() {
+//     myBody[0].style.backgroundColor = "#000000";
+//     console.log("hiiiii");
+// }
 
-function preload() {
-  soundFormats('mp3', 'ogg');
-  forSouth = loadSound('https://rawgit.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg', success);
-  forEast = loadSound('https://rawgit.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg');
-}
-
+//function preload() {
+ //soundFormats('mp3', 'ogg');
+  //forSouth = loadSound('https://rawgit.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg', success);
+ // forEast = loadSound('https://rawgit.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg');
+//}
 
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
@@ -45,14 +44,14 @@ var i = 0
 function myOrientation(){
         //text_area.innerHTML = compassdir;
         //South forSouth.ogg 
-    if(compassHeading >= 135 && compassHeading < 225) {
-        forSouth.play();
-    }
+    // if(compassHeading >= 135 && compassHeading < 225) {
+    //     forSouth.play();
+    // }
 
 //East forEast.ogg
-    if(compassHeading >= 45 && compassHeading < 135) {
-        forEast.play();
-    }   
+    // if(compassHeading >= 45 && compassHeading < 135) {
+    //     forEast.play();
+    // }   
  //West flicker       
     if(compassHeading >= 225 && compassHeading < 315) {
         timer++;
