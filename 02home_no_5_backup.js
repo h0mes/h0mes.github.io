@@ -20,21 +20,7 @@ oriented = function(e) {
 var text_area = document.getElementById("compass_content");
 
     function myOrientation(){
-        //text_area.innerHTML = compassdir;
-         //NORTHWEST h0me no. 1
-    //     if(compassHeading >= 323 && compassHeading < 332) {
-    //          text_area.innerHTML = "1.0 one";
-    // }   
-    //     if(compassHeading >= 332 && compassHeading < 341) {
-    //          text_area.innerHTML = "1.1 indurated, fading earthward faces outwards right up against tremendous velocity:  ";
-    // }   
-    //     if(compassHeading >= 341 && compassHeading < 350) {
-    //          text_area.innerHTML = "1.2 100 years of holding tilts it \n 10 degrees into earth. soft \n mossed-over steps lead to the side door. \n Front stairs chipped off, muted.";
-    // }   
-    //     if(compassHeading >= 350 && compassHeading < 359) {
-    //          text_area.innerHTML = "1.3 Rotting floorboards would cocoon footsteps.";
-    // }
-        //NORTH
+
         if(compassHeading >= 0 && compassHeading < 36) {
              text_area.innerHTML = "5.0 five";
     }   
