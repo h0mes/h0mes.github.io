@@ -1,9 +1,17 @@
+var myBody = document.getElementsByTagName("body");
+
+function success() {
+    myBody[0].style.backgroundColor = "#000000";
+    console.log("hiiiii");
+}
 
 function preload() {
   soundFormats('mp3', 'ogg');
-  forSouth = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forSouth.ogg');
+  forSouth = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forSouth.ogg', success);
   forEast = loadSound('https://raw.githubusercontent.com/h0mes/h0mes.github.io/master/assets/home_no_5_west96k_forEast.ogg');
 }
+
+
 //called by device orientation listener - contains information about the change in orientation (stored as argument "e")
 oriented = function(e) {
         heading = e.webkitCompassHeading;
@@ -22,7 +30,6 @@ oriented = function(e) {
 	window.addEventListener('deviceorientation', oriented, false);
 
 
-
 function setup() {
     forSouth.setVolume(0.6);
     forEast.setVolume(0.6);
@@ -34,7 +41,6 @@ var text_area = document.getElementById("compass_content");
 var timer = 0
 var i = 0
 }
-
 
 function myOrientation(){
         //text_area.innerHTML = compassdir;
