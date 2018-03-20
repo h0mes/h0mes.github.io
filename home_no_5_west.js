@@ -72,7 +72,7 @@ function draw(){
             } 
         }
         text_area.innerHTML = content_home5[i];
-}
+
         if(forEast.isPlaying() == true){
             forEast.stop()
         }if(forSouth.isPlaying() == true){
