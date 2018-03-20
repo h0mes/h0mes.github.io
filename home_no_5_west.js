@@ -70,6 +70,9 @@ function draw(){
             if(i >= content_home5.length) {
               i = 0;  
             } 
+            else(){
+            text_area.innerHTML = content_home5[i]
+            }
         }
         text_area.innerHTML = content_home5[i];
         if(forEast.isPlaying() == true){
