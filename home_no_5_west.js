@@ -29,7 +29,24 @@ timer = 0
 i = 0
 }
 
+oriented = function(e) {
+        heading = e.webkitCompassHeading;
+        alpha = e.alpha;
+        if(e.webkitCompassHeading) {
+            compassHeading = e.webkitCompassHeading;
+        }   else  { 
+            compassHeading = e.alpha;
+        }
+    
+        //calls function to alter content based on heading
+        myOrientation();
+    }
+
+//device orientation listener calls oriented function when heading changes
+    window.addEventListener('deviceorientation', oriented, false);
+
 function draw(){
+    function MyOrientation(){
         //text_area.innerHTML = compassdir;
         //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
@@ -56,6 +73,7 @@ function draw(){
             } 
         }
         text_area.innerHTML = content_home5[i];
+
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
@@ -69,17 +87,5 @@ function draw(){
         }
     }
 }
-
-
-window.addEventListener('deviceorientation', function(e) 
-{
-  alpha = e.alpha;
-  beta = e.beta;
-  gamma = e.gamma;
-  if(e.webkitCompassHeading) {
-            compassHeading = e.webkitCompassHeading;
-        }   else  { 
-            compassHeading = alpha;
-        }
-});
+}
 
