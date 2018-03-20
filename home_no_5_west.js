@@ -64,15 +64,12 @@ function draw(){
  //West flicker       
     if(compassHeading >= 225 && compassHeading < 315) {
         timer++;
-        if(timer % 20 == 0) {
+        if(timer % 30 == 0) {
             i++
             text_area.innerHTML = content_home5[i];
             if(i >= content_home5.length) {
               i = 0;  
             } 
-            else(){
-            text_area.innerHTML = content_home5[i]
-            }
         }
         text_area.innerHTML = content_home5[i];
         if(forEast.isPlaying() == true){
