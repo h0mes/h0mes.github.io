@@ -75,8 +75,11 @@ function draw(){
 }
         if(forEast.isPlaying() == true){
             forEast.stop()
+        }if(forSouth.isPlaying() == true){
+            forSouth.stop()
         }
     }
+    //north
     if(compassHeading >= 315 || compassHeading < 45){
         if(forEast.isPlaying() == true){
             forEast.stop()
@@ -85,6 +88,6 @@ function draw(){
             forSouth.stop()
         }
     }
-}
+
 
 
