@@ -66,12 +66,13 @@ function draw(){
         timer++;
         if(timer % 20 == 0) {
             i++
+            text_area.innerHTML = content_home5[i];
             if(i >= content_home5.length) {
               i = 0;  
             } 
         }
         text_area.innerHTML = content_home5[i];
-
+}
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
