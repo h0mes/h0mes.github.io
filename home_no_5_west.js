@@ -28,10 +28,8 @@ content = content_home5;
 text_area = document.getElementById("compass_content");
 timer = 0
 i = 0
-}
 
-window.addEventListener('deviceorientation', function(e) 
-{
+window.addEventListener('deviceorientation', function(e) {
   alpha = e.alpha;
   beta = e.beta;
   gamma = e.gamma;
@@ -40,7 +38,11 @@ window.addEventListener('deviceorientation', function(e)
         }   else  { 
             compassHeading = alpha;
         }
-});
+    });
+
+}
+
+
 
 function draw(){
         //text_area.innerHTML = compassdir;
