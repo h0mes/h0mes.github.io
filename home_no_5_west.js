@@ -7,7 +7,7 @@ function success() {
 
 function preload() {
  soundFormats('mp3', 'ogg');
-  forSouth = loadSound('assets/home_no_5_west96k_forEast.mp3', success);
+  forSouth = loadSound('assets/home_no_5_west96k_forSouth.mp3', success);
  forEast = loadSound('assets/home_no_5_west96k_forEast.mp3');
 }
 
@@ -29,27 +29,7 @@ timer = 0
 i = 0
 }
 
-
-//called by device orientation listener - contains information about the change in orientation (stored as argument "e")
-oriented = function(e) {
-        heading = e.webkitCompassHeading;
-        alpha = e.alpha;
-        if(e.webkitCompassHeading) {
-            compassHeading = e.webkitCompassHeading;
-        }   else  { 
-            compassHeading = e.alpha;
-        }
-    
-        //calls function to alter content based on heading
-        myOrientation();
-    }
-
-//device orientation listener calls oriented function when heading changes
-	window.addEventListener('deviceorientation', oriented, false);
-
-
-
-function myOrientation(){
+function draw(){
         //text_area.innerHTML = compassdir;
         //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
@@ -73,4 +53,16 @@ function myOrientation(){
     }
 }
 
+
+window.addEventListener('deviceorientation', function(e) 
+{
+  alpha = e.alpha;
+  beta = e.beta;
+  gamma = e.gamma;
+  if(e.webkitCompassHeading) {
+            compassHeading = e.webkitCompassHeading;
+        }   else  { 
+            compassHeading = alpha;
+        }
+});
 
