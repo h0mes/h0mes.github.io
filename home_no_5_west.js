@@ -72,10 +72,10 @@ function draw(){
             } 
         }
         text_area.innerHTML = content_home5[i];
-
         if(forEast.isPlaying() == true){
             forEast.stop()
-        }if(forSouth.isPlaying() == true){
+        }
+        if(forSouth.isPlaying() == true){
             forSouth.stop()
         }
     }
@@ -88,6 +88,7 @@ function draw(){
             forSouth.stop()
         }
     }
+}
 
 
 
