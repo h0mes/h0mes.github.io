@@ -34,11 +34,17 @@ function draw(){
         //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
         forSouth.play();
+        if(forEast.isPlaying() == true){
+            forEast.stop()
+        }
     }
 
 //East forEast.ogg
     if(compassHeading >= 45 && compassHeading < 135) {
         forEast.play();
+        if(forSouth.isPlaying() == true){
+            forSouth.stop()
+        }
     }   
  //West flicker       
     if(compassHeading >= 225 && compassHeading < 315) {
@@ -50,6 +56,17 @@ function draw(){
             } 
         }
         text_area.innerHTML = content_home5[i];
+        if(forEast.isPlaying() == true){
+            forEast.stop()
+        }
+    }
+    if(compassHeading >= 315 || compassHeading < 45){
+        if(forEast.isPlaying() == true){
+            forEast.stop()
+        }
+        if(forSouth.isPlaying() == true){
+            forSouth.stop()
+        }
     }
 }
 
