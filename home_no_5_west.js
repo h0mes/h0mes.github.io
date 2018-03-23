@@ -70,7 +70,7 @@ window.addEventListener('deviceorientation', function(e) {
  //West touch to scroll      
     if(compassHeading >= 225 && compassHeading < 315) {
         text_area.innerHTML = content_home5[i];
-        function touchStarted(){
+        function touchEnded(){
             i++
             text_area.innerHTML = content_home5[i];
             if(i >= content_home5.length) {
