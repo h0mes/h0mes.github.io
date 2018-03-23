@@ -30,19 +30,17 @@ timer = 0
 i = 0
 
 window.addEventListener('deviceorientation', function(e) {
-  alpha = e.alpha;
-  beta = e.beta;
-  gamma = e.gamma;
+  var alpha
+  //beta = e.beta;
+  //gamma = e.gamma;
   if(e.webkitCompassHeading) {
-            compassHeading = e.webkitCompassHeading;
+            alpha = e.webkitCompassHeading;
         }   else  { 
-            compassHeading = alpha;
+            alpha = e.alpha;
         }
     });
 
 }
-
-
 
 function draw(){
         //text_area.innerHTML = compassdir;
@@ -64,7 +62,7 @@ function draw(){
  //West flicker       
     if(compassHeading >= 225 && compassHeading < 315) {
         timer++;
-        if(timer % 20 == 0) {
+        if(timer % 60 == 0) {
             i++
             text_area.innerHTML = content_home5[i];
             if(i >= content_home5.length) {
