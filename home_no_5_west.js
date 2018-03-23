@@ -11,7 +11,6 @@ function preload() {
  forEast = loadSound('assets/home_no_5_west96k_forEast.mp3');
 }
 
-var alpha;
 var timer;
 var text_area;
 var content_home5;
@@ -30,17 +29,19 @@ text_area = document.getElementById("compass_content");
 timer = 0
 i = 0
 
-window.addEventListener('deviceorientation', function(e) {
-  alpha = e.alpha;
-  //beta = e.beta;
-  //gamma = e.gamma;
-  if(e.webkitCompassHeading) {
-            alpha = e.webkitCompassHeading;
+    if (window.DeviceOrientationEvent) {
+    window.addEventListener('deviceorientation', function(e) {
+        //alpha = e.alpha;
+        //beta = e.beta;
+        //gamma = e.gamma;
+        if(e.webkitCompassHeading) {
+            compassHeading = e.webkitCompassHeading;
         }   else  { 
             alpha = e.alpha;
         }
-    });
+     });
 
+    }
 }
 
 function draw(){
