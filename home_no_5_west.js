@@ -49,12 +49,13 @@ window.addEventListener('deviceorientation', function(e) {
 
 
 function draw(){
-        //text_area.innerHTML = compassdir;
-        //South forSouth.ogg 
+//text_area.innerHTML = compassHeading;
+//South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
         forSouth.play();
         if(forEast.isPlaying() == true){
             forEast.stop()
+            text_area.innerHTML = " "
         }
     }
 
@@ -63,19 +64,19 @@ function draw(){
         forEast.play();
         if(forSouth.isPlaying() == true){
             forSouth.stop()
+            text_area.innerHTML = " "
         }
-    }   
- //West flicker       
+    } 
+
+ //West touch to scroll      
     if(compassHeading >= 225 && compassHeading < 315) {
-        timer++;
-        if(timer % 60 == 0) {
-            i++
-            text_area.innerHTML = content_home5[i];
-            if(i >= content_home5.length) {
-              i = 0;  
-            } 
-        }
         text_area.innerHTML = content_home5[i];
+        function touchStarted(){
+            i++
+            if(i >= content_home5.length) {
+              i = 0; 
+            }
+        }   
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
@@ -83,7 +84,8 @@ function draw(){
             forSouth.stop()
         }
     }
-    //north
+
+//north
     if(compassHeading >= 315 || compassHeading < 45){
         if(forEast.isPlaying() == true){
             forEast.stop()
@@ -91,6 +93,7 @@ function draw(){
         if(forSouth.isPlaying() == true){
             forSouth.stop()
         }
+        text_area.innerHTML = " "
     }
 }
 
