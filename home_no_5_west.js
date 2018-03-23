@@ -73,6 +73,7 @@ function draw(){
         text_area.innerHTML = content_home5[i];
         function touchStarted(){
             i++
+            text_area.innerHTML = content_home5[i];
             if(i >= content_home5.length) {
               i = 0; 
             }
