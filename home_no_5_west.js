@@ -29,19 +29,24 @@ text_area = document.getElementById("compass_content");
 timer = 0
 i = 0
 
-var promise = FULLTILT.getDeviceOrientation({ 'type': 'world' });
-    promise.then(function(deviceOrientation) {
-        window.addEventListener('deviceorientation', function(e) {
-            var alpha = e.alpha;
-            deviceOrientation.listen(function() {
-                var currentOrientation = deviceOrientation.getScreenAdjustedEuler();
-                var compassHeading = 360 - currentOrientation.alpha;
-            });
-        });
-    }).catch(function(errorMessage) {
-        console.log('device orientation functions not supported :*(');
+//var promise = FULLTILT.getDeviceOrientation({ 'type': 'world' });
+    //promise.then(function(deviceOrientation) {
+window.addEventListener('deviceorientation', function(e) {
+    var alpha = e.alpha;
+        if(e.webkitCompassHeading){
+            compassHeading = e.webkitCompassHeading;
+        }
+        else compassHeading = e.alpha;
     });
-}
+} 
+        //deviceOrientation.listen(function() {
+        //var currentOrientation = deviceOrientation.getScreenAdjustedEuler();
+        //var compassHeading = 360 - currentOrientation.alpha;
+        //});
+        //});
+    //}).catch(function(errorMessage) {
+        //console.log('device orientation functions not supported :*(');
+
 
 
 function draw(){
