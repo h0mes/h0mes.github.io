@@ -30,7 +30,7 @@ timer = 0
 i = 0
 
 window.addEventListener('deviceorientation', function(e) {
-  var alpha
+  alpha = e.alpha
   //beta = e.beta;
   //gamma = e.gamma;
   if(e.webkitCompassHeading) {
