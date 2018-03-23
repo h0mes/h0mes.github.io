@@ -34,9 +34,9 @@ i = 0
 window.addEventListener('deviceorientation', function(e) {
     var alpha = e.alpha;
         if(e.webkitCompassHeading){
-            compassHeading = e.webkitCompassHeading;
+            //compassHeading = e.webkitCompassHeading;
+            else compassHeading = e.alpha;
         }
-        else compassHeading = e.alpha;
     });
 } 
         //deviceOrientation.listen(function() {
@@ -46,7 +46,6 @@ window.addEventListener('deviceorientation', function(e) {
         //});
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
-
 
 
 function draw(){
