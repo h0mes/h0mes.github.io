@@ -170,6 +170,5 @@ function draw(){
         //    i++;
         //    text_area.innerHTML = " "; 
         // }, false);
-    };
-
+};
 
