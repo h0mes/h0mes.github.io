@@ -70,15 +70,20 @@ function draw(){
  //West touch to scroll      
     if(compassHeading >= 225 && compassHeading < 315) {
         text_area.innerHTML = content_home5[i];
-        function touchStarted(){
+        // function touchStarted(){
+        //     i++
+        //     text_area.innerHTML = content_home5[i];
+        //     if(i >= 10) {
+        //       i = 0; 
+        //     }  
+        // } 
+        function mousePressed(){
             i++
             text_area.innerHTML = content_home5[i];
+            return false;
             if(i >= 10) {
               i = 0; 
-            }  
-        } 
-        function touchEnded(){
-            text_area.innerHTML = content_home5[i];
+            } 
         }  
         if(forEast.isPlaying() == true){
             forEast.stop()
