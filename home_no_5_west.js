@@ -47,7 +47,7 @@ window.addEventListener('deviceorientation', function(e) {
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
 
-
+function draw(){
 //text_area.innerHTML = compassHeading;
 //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
@@ -96,5 +96,5 @@ window.addEventListener('deviceorientation', function(e) {
         }
         text_area.innerHTML = " "
     }
-
+}
 
