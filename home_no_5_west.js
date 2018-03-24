@@ -125,8 +125,10 @@ window.addEventListener('deviceorientation', function(e) {
         };
         if (mouseIsPressed){
                 text_area.innerHTML = auxText[i];
+                i++;
             } else {
                 text_area.innerHTML = " ";
+                i++;
             }
 
         // if(text_area.touchStarted() == true) {
