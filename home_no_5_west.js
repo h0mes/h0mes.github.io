@@ -38,7 +38,7 @@ window.addEventListener('deviceorientation', function(e) {
     });
 };
 
-function draw(){
+//function draw(){
 //text_area.innerHTML = compassHeading;
 //South 1minute.mp3
     if(compassHeading >= 145 && compassHeading < 225) {
@@ -138,6 +138,12 @@ function draw(){
             } else {
                 text_area.innerHTML = " ";
             };
+        if(forEast.isPlaying() == true){
+            forEast.pause();
+        };
+        if(forSouth.isPlaying() == true){
+            forSouth.pause();
+        };
     };
         // timer++
         //     if(timer % 120 == 0){
@@ -159,5 +165,5 @@ function draw(){
         //    i++;
         //    text_area.innerHTML = " "; 
         // }, false);
-};
+//};
 
