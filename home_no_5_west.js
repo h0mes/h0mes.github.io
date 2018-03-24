@@ -7,8 +7,8 @@ function success() {
 
 function preload() {
  soundFormats('mp3', 'ogg');
-  forSouth = loadSound('assets/home_no_5_west96k_forSouth.mp3', success);
- forEast = loadSound('assets/home_no_5_west_forEast.mp3');
+  forSouth = loadSound('assets/home_no_5_west_1minute.ogg', success);
+ forEast = loadSound('assets/home_no_5_west_2minute.ogg');
 };
 
 var text_area;
@@ -134,11 +134,12 @@ function draw(){
         //         i++;
         //         text_area.innerHTML = auxText[i];
         //     };  
-
+        function mousePressed(){
+            i++;
+        }
         if (mouseIsPressed){
                 text_area.innerHTML = auxText[i];
             } else {
-                i++;
                 text_area.innerHTML = " ";
             }
 
