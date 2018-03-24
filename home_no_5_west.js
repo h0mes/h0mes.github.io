@@ -20,8 +20,8 @@ var timer;
 
 function setup() {
     canvas = createCanvas(window.innerWidth, window.innerHeight);
-    forSouth.setVolume(0.7);
-    forEast.setVolume(0.7);
+    forSouth.setVolume(1.0);
+    forEast.setVolume(1.0);
     forSouth.playMode('untilDone');
     forEast.playMode('untilDone');
 content_home5 = ["5.0 five", "5.1 Crows in the nearby-but-not-close, at least three", "5.2 There had been\n gabled second floor windows, green roof\n back porch covered, front porch open \n windows flanked the storm door \n a few steps up from the foundation.", "5.3 Here, desire rots seasons clean.", "5.4 Hear a cow lowing a few miles away. \n Pickup truck passes.", "5.5 Dead grass creases stiffly under my step. ", "5.6 In summer, conquered by paradise trees, it \n grew hot and pulpy, inside \n adopting the airy nature of its verdant exterior:", "5.7 rain and snow blowing diagonal into close-set second-story eyes, \n stiff wooden body softening with time and water, iterating decay.", "5.8 In its absence, I can see across the clearing \n to where the trees start,", "5.9 facing West. "];
