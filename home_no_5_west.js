@@ -47,7 +47,7 @@ window.addEventListener('deviceorientation', function(e) {
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
 
-function draw(){
+//function draw(){
 //text_area.innerHTML = compassHeading;
 //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
@@ -67,24 +67,18 @@ function draw(){
         }
     } 
 
- //West touch to scroll      
-    if(compassHeading >= 225 && compassHeading < 315) {
+ //West by degrees      
+    if(compassHeading >= 225 && compassHeading < 325) {
+        i++
         text_area.innerHTML = content_home5[i];
-        // function touchStarted(){
+        // function mousePressed(){
         //     i++
         //     text_area.innerHTML = content_home5[i];
+        //     return false;
         //     if(i >= 10) {
         //       i = 0; 
-        //     }  
-        // } 
-        function mousePressed(){
-            i++
-            text_area.innerHTML = content_home5[i];
-            return false;
-            if(i >= 10) {
-              i = 0; 
-            } 
-        }  
+        //     } 
+        // }  
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
@@ -92,9 +86,42 @@ function draw(){
             forSouth.stop()
         }
     }
+    // if(compassHeading >= 235 && compassHeading < 245) {
+    //     text_area.innerHTML = content_home5[1];
+    // }
+    // if(compassHeading >= 245 && compassHeading < 255) {
+    //     text_area.innerHTML = content_home5[2];
+    // }
+    // if(compassHeading >= 255 && compassHeading < 265) {
+    //     text_area.innerHTML = content_home5[3];
+    // }
+    // if(compassHeading >= 265 && compassHeading < 275) {
+    //     text_area.innerHTML = content_home5[4];
+    // }
+    // if(compassHeading >= 275 && compassHeading < 285) {
+    //     text_area.innerHTML = content_home5[5];
+    // }
+    // if(compassHeading >= 285 && compassHeading < 295) {
+    //     text_area.innerHTML = content_home5[6];
+    // }
+    // if(compassHeading >= 295 && compassHeading < 305) {
+    //     text_area.innerHTML = content_home5[7];
+    // }
+    // if(compassHeading >= 305 && compassHeading < 315) {
+    //     text_area.innerHTML = content_home5[8];
+    // }
+    // if(compassHeading >= 315 && compassHeading < 325) {
+    //     text_area.innerHTML = content_home5[9];
+    //     if(forEast.isPlaying() == true){
+    //         forEast.stop()
+    //     }
+    //     if(forSouth.isPlaying() == true){
+    //         forSouth.stop()
+    //     }
+    // }
 
 //north
-    if(compassHeading >= 315 || compassHeading < 45){
+    if(compassHeading >= 325 || compassHeading < 45){
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
@@ -103,5 +130,5 @@ function draw(){
         }
         text_area.innerHTML = " "
     }
-}
+//}
 
