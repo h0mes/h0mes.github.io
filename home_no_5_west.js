@@ -1,14 +1,14 @@
 var myBody = document.getElementsByTagName("body");
 
 function success() {
-    myBody[0].style.backgroundColor = "#000000";
+    myBody[0].style.backgroundColor = "#0000FF";
     console.log("hiiiii");
 }
 
 function preload() {
- soundFormats('mp3', 'ogg');
-  forSouth = loadSound('assets/home_no_5_west_1minute.ogg', success);
- forEast = loadSound('assets/home_no_5_west_2minute.ogg');
+ soundFormats('mp3');
+  forSouth = loadSound('assets/home_no_5_west_1minute.mp3', success);
+ forEast = loadSound('assets/home_no_5_west_2minute.mp3');
 };
 
 var text_area;
@@ -136,7 +136,7 @@ function draw(){
         //     };  
         function mousePressed(){
             i++;
-        }
+        };
         if (mouseIsPressed){
                 text_area.innerHTML = auxText[i];
             } else {
