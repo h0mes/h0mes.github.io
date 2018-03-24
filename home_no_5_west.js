@@ -121,26 +121,41 @@ function draw(){
     };
 
 //north
-    if(compassHeading >= 335 || compassHeading < 45){
-        text_area.innerHTML = auxText[i]
+    if(compassHeading >= 335 && compassHeading < 355){
         if(forEast.isPlaying() == true){
-            forEast.stop();
+            forEast.pause();
         };
         if(forSouth.isPlaying() == true){
-            forSouth.stop();
+            forSouth.pause();
         };
-        // timer++
-        //     if(timer % 120 == 0){
-        //         i++;
-        //         text_area.innerHTML = auxText[i];
-        //     };  
-
+        
         if (mouseIsPressed){
-                text_area.innerHTML = auxText[i];
+                text_area.innerHTML = auxText[0];
             } else {
-                i++;
                 text_area.innerHTML = " ";
-            }
+            };
+    };
+    if(compassHeading >= 355 || compassHeading < 15){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[1];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
+    if(compassHeading >= 15 && compassHeading < 35){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[2];
+            } else {
+                text_area.innerHTML = " ";
+            }; 
+    };
+    if(compassHeading >= 35 && compassHeading < 45){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[3];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
 
         // if(text_area.touchStarted() == true) {
         //     i++;
