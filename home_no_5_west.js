@@ -44,7 +44,7 @@ window.addEventListener('deviceorientation', function(e) {
     if(compassHeading >= 145 && compassHeading < 225) {
         forSouth.play();
         if(forEast.isPlaying() == true){
-            forEast.pause();
+            forEast.stop();
             text_area.innerHTML = " "
         };
     };
@@ -53,7 +53,7 @@ window.addEventListener('deviceorientation', function(e) {
     if(compassHeading >= 225 && compassHeading < 335) {
         forEast.play();
         if(forSouth.isPlaying() == true){
-            forSouth.pause();
+            forSouth.stop();
             text_area.innerHTML = " "
         };
     };
@@ -63,10 +63,10 @@ window.addEventListener('deviceorientation', function(e) {
         //i++
         text_area.innerHTML = content_home5[0]; 
         if(forEast.isPlaying() == true){
-            forEast.pause();
+            forEast.stop();
         };
         if(forSouth.isPlaying() == true){
-            forSouth.pause();
+            forSouth.stop();
         };
         if(mouseIsPressed){
             text_area.innerHTML = " "
@@ -109,10 +109,10 @@ window.addEventListener('deviceorientation', function(e) {
 //north
     if(compassHeading >= 335 && compassHeading < 355){
         if(forEast.isPlaying() == true){
-            forEast.pause();
+            forEast.stop();
         };
         if(forSouth.isPlaying() == true){
-            forSouth.pause();
+            forSouth.stop();
         };
         
         if (mouseIsPressed){
@@ -142,10 +142,10 @@ window.addEventListener('deviceorientation', function(e) {
                 text_area.innerHTML = " ";
             };
         if(forEast.isPlaying() == true){
-            forEast.pause();
+            forEast.stop();
         };
         if(forSouth.isPlaying() == true){
-            forSouth.pause();
+            forSouth.stop();
         };
     };
         // timer++
