@@ -130,12 +130,11 @@ function draw(){
         text_area.addEventListener('touchstart', function(e){
            i++;
            text_area.innerHTML = auxText[i]; 
-            }
-        }, false)
+        }, false);
         text_area.addEventListener('touchend', function(e){
            i++;
            text_area.innerHTML = " "; 
-            }
-        }, false)
+        }, false);
+    }
 }
 
