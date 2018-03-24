@@ -8,7 +8,7 @@ function success() {
 function preload() {
  soundFormats('mp3', 'ogg');
   forSouth = loadSound('assets/home_no_5_west96k_forSouth.mp3', success);
- forEast = loadSound('assets/home_no_5_west96k_forEast.mp3');
+ forEast = loadSound('assets/home_no_5_west_forEast.mp3');
 }
 
 var timer;
@@ -50,7 +50,7 @@ window.addEventListener('deviceorientation', function(e) {
 function draw(){
 //text_area.innerHTML = compassHeading;
 //South forSouth.ogg 
-    if(compassHeading >= 135 && compassHeading < 225) {
+    if(compassHeading >= 145 && compassHeading < 225) {
         forSouth.play();
         if(forEast.isPlaying() == true){
             forEast.stop()
@@ -58,8 +58,8 @@ function draw(){
         }
     }
 
-//East forEast.ogg
-    if(compassHeading >= 45 && compassHeading < 135) {
+//"East" actually west forEast.mp3(2minutes)
+    if(compassHeading >= 225 && compassHeading < 335) {
         forEast.play();
         if(forSouth.isPlaying() == true){
             forSouth.stop()
@@ -67,8 +67,8 @@ function draw(){
         }
     } 
 
- //West by degrees      
-    if(compassHeading >= 225 && compassHeading < 235) {
+ //"West"  actually east by degrees      
+    if(compassHeading >= 45 && compassHeading < 55) {
         //i++
         text_area.innerHTML = content[0];
         // function mousePressed(){
@@ -86,32 +86,32 @@ function draw(){
             forSouth.stop()
         }
     }
-    if(compassHeading >= 235 && compassHeading < 245) {
-        text_area.innerHTML = content_home5[1];
+    if(compassHeading >= 55 && compassHeading < 65) {
+        text_area.innerHTML = content_home5[9];
     }
-    if(compassHeading >= 245 && compassHeading < 255) {
-        text_area.innerHTML = content_home5[2];
-    }
-    if(compassHeading >= 255 && compassHeading < 265) {
-        text_area.innerHTML = content_home5[3];
-    }
-    if(compassHeading >= 265 && compassHeading < 275) {
-        text_area.innerHTML = content_home5[4];
-    }
-    if(compassHeading >= 275 && compassHeading < 285) {
-        text_area.innerHTML = content_home5[5];
-    }
-    if(compassHeading >= 285 && compassHeading < 295) {
-        text_area.innerHTML = content_home5[6];
-    }
-    if(compassHeading >= 295 && compassHeading < 305) {
-        text_area.innerHTML = content_home5[7];
-    }
-    if(compassHeading >= 305 && compassHeading < 315) {
+    if(compassHeading >= 65 && compassHeading < 75) {
         text_area.innerHTML = content_home5[8];
     }
-    if(compassHeading >= 315 && compassHeading < 325) {
-        text_area.innerHTML = content_home5[9];
+    if(compassHeading >= 75 && compassHeading < 85) {
+        text_area.innerHTML = content_home5[7];
+    }
+    if(compassHeading >= 85 && compassHeading < 95) {
+        text_area.innerHTML = content_home5[6];
+    }
+    if(compassHeading >= 95 && compassHeading < 105) {
+        text_area.innerHTML = content_home5[5];
+    }
+    if(compassHeading >= 105 && compassHeading < 115) {
+        text_area.innerHTML = content_home5[4];
+    }
+    if(compassHeading >= 115 && compassHeading < 125) {
+        text_area.innerHTML = content_home5[1];
+    }
+    if(compassHeading >= 125 && compassHeading < 135) {
+        text_area.innerHTML = content_home5[2];
+    }
+    if(compassHeading >= 135 && compassHeading < 145) {
+        text_area.innerHTML = content_home5[3];
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
@@ -121,7 +121,7 @@ function draw(){
     }
 
 //north
-    if(compassHeading >= 325 || compassHeading < 45){
+    if(compassHeading >= 335 || compassHeading < 45){
         if(forEast.isPlaying() == true){
             forEast.stop()
         }
