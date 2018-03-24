@@ -29,10 +29,6 @@ i = 0
 var clicky = function mousePressed(){
              i++;
              text_area.innerHTML = auxText[i];
-             return false;
-             if(i >= 10) {
-               i = 0; 
-             } 
         };
 
 //var promise = FULLTILT.getDeviceOrientation({ 'type': 'world' });
