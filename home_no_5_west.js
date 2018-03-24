@@ -68,6 +68,9 @@ window.addEventListener('deviceorientation', function(e) {
         if(forSouth.isPlaying() == true){
             forSouth.pause();
         };
+        if(mouseIsPressed){
+            text_area.innerHTML = " "
+        }
     };
     if(compassHeading >= 55 && compassHeading < 65) {
         text_area.innerHTML = content_home5[9];
