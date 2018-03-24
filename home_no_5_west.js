@@ -44,7 +44,7 @@ window.addEventListener('deviceorientation', function(e) {
             compassHeading = alpha;
         }
     });
-} 
+};
         //deviceOrientation.listen(function() {
         //var currentOrientation = deviceOrientation.getScreenAdjustedEuler();
         //var compassHeading = 360 - currentOrientation.alpha;
@@ -71,7 +71,7 @@ function draw(){
             forSouth.stop()
             text_area.innerHTML = " "
         }
-    } 
+    };
 
  //"West"  actually east by degrees      
     if(compassHeading >= 45 && compassHeading < 55) {
@@ -79,11 +79,11 @@ function draw(){
         text_area.innerHTML = content_home5[0]; 
         if(forEast.isPlaying() == true){
             forEast.stop()
-        }
+        };
         if(forSouth.isPlaying() == true){
             forSouth.stop()
-        }
-    }
+        };
+    };
     if(compassHeading >= 55 && compassHeading < 65) {
         text_area.innerHTML = content_home5[9];
     }
@@ -111,22 +111,25 @@ function draw(){
     if(compassHeading >= 135 && compassHeading < 145) {
         text_area.innerHTML = content_home5[3];
         if(forEast.isPlaying() == true){
-            forEast.stop()
-        }
+            forEast.stop();
+        };
         if(forSouth.isPlaying() == true){
-            forSouth.stop()
-        }
-    }
+            forSouth.stop();
+        };
+    };
 
 //north
     if(compassHeading >= 335 || compassHeading < 45){
         if(forEast.isPlaying() == true){
-            forEast.stop()
-        }
+            forEast.stop();
+        };
         if(forSouth.isPlaying() == true){
-            forSouth.stop()
-        }
-        text_area.clicky();
+            forSouth.stop();
+        };
+        if(text_area.touchStarted() == true) {
+            i++;
+            text_area.innerHTML = auxText[i];
+        };
         // text_area.addEventListener('touchstart', function(e){
         //    i++;
         //    text_area.innerHTML = auxText[i]; 
@@ -135,6 +138,6 @@ function draw(){
         //    i++;
         //    text_area.innerHTML = " "; 
         // }, false);
-    }
+    };
 }
 
