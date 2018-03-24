@@ -47,7 +47,7 @@ window.addEventListener('deviceorientation', function(e) {
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
 
-//function draw(){
+function draw(){
 //text_area.innerHTML = compassHeading;
 //South forSouth.ogg 
     if(compassHeading >= 135 && compassHeading < 225) {
@@ -70,7 +70,7 @@ window.addEventListener('deviceorientation', function(e) {
  //West by degrees      
     if(compassHeading >= 225 && compassHeading < 235) {
         //i++
-        text_area.innerHTML = content_home5[0];
+        text_area.innerHTML = content[0];
         // function mousePressed(){
         //     i++
         //     text_area.innerHTML = content_home5[i];
@@ -130,5 +130,5 @@ window.addEventListener('deviceorientation', function(e) {
         }
         text_area.innerHTML = " "
     }
-//}
+}
 
