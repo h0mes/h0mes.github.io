@@ -29,17 +29,7 @@ auxText = ["01.mov: This is how home number five was the first time I saw it. It
 text_area = document.getElementById("compass_content");
 i = 0
 timer = 0
-// var clicky = function mousePressed(){
-//              i++;
-//              text_area.innerHTML = auxText[i];
-//              // return false;
-//              if(i >= 10) {
-//                i = 0; 
-//              }; 
-//         };
 
-//var promise = FULLTILT.getDeviceOrientation({ 'type': 'world' });
-    //promise.then(function(deviceOrientation) {
 window.addEventListener('deviceorientation', function(e) {
     var alpha = e.alpha;
         if(e.webkitCompassHeading){
@@ -47,17 +37,10 @@ window.addEventListener('deviceorientation', function(e) {
         } else compassHeading = 360 - alpha;
     });
 };
-        //deviceOrientation.listen(function() {
-        //var currentOrientation = deviceOrientation.getScreenAdjustedEuler();
-        //var compassHeading = 360 - currentOrientation.alpha;
-        //});
-        //});
-    //}).catch(function(errorMessage) {
-        //console.log('device orientation functions not supported :*(');
 
-function draw(){
+//function draw(){
 //text_area.innerHTML = compassHeading;
-//South forSouth.ogg 
+//South 1minute.mp3
     if(compassHeading >= 145 && compassHeading < 225) {
         forSouth.play();
         if(forEast.isPlaying() == true){
@@ -136,6 +119,9 @@ function draw(){
         //     };  
         function mousePressed(){
             i++;
+            if(i >= auxText.length){
+                i=0;
+            };
         };
         if (mouseIsPressed){
                 text_area.innerHTML = auxText[i];
@@ -157,5 +143,5 @@ function draw(){
         //    text_area.innerHTML = " "; 
         // }, false);
     };
-};
+//};
 
