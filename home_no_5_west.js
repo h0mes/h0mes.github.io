@@ -38,13 +38,13 @@ window.addEventListener('deviceorientation', function(e) {
     });
 };
 
-//function draw(){
+function draw(){
 //text_area.innerHTML = compassHeading;
 //South 1minute.mp3
     if(compassHeading >= 145 && compassHeading < 225) {
         forSouth.play();
         if(forEast.isPlaying() == true){
-            forEast.stop();
+            forEast.pause();
             text_area.innerHTML = " "
         };
     };
@@ -53,7 +53,7 @@ window.addEventListener('deviceorientation', function(e) {
     if(compassHeading >= 225 && compassHeading < 335) {
         forEast.play();
         if(forSouth.isPlaying() == true){
-            forSouth.stop();
+            forSouth.pause();
             text_area.innerHTML = " "
         };
     };
@@ -63,10 +63,10 @@ window.addEventListener('deviceorientation', function(e) {
         //i++
         text_area.innerHTML = content_home5[0]; 
         if(forEast.isPlaying() == true){
-            forEast.stop();
+            forEast.pause();
         };
         if(forSouth.isPlaying() == true){
-            forSouth.stop();
+            forSouth.pause();
         };
     };
     if(compassHeading >= 55 && compassHeading < 65) {
@@ -104,32 +104,47 @@ window.addEventListener('deviceorientation', function(e) {
     };
 
 //north
-    if(compassHeading >= 335 || compassHeading < 45){
-        text_area.innerHTML = auxText[i]
+    if(compassHeading >= 335 && compassHeading < 355){
         if(forEast.isPlaying() == true){
-            forEast.stop();
+            forEast.pause();
         };
         if(forSouth.isPlaying() == true){
-            forSouth.stop();
+            forSouth.pause();
         };
+        
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[0];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
+    if(compassHeading >= 355 || compassHeading < 15){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[1];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
+    if(compassHeading >= 15 && compassHeading < 35){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[2];
+            } else {
+                text_area.innerHTML = " ";
+            }; 
+    };
+    if(compassHeading >= 35 && compassHeading < 45){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[3];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
         // timer++
         //     if(timer % 120 == 0){
         //         i++;
         //         text_area.innerHTML = auxText[i];
         //     };  
-        function mousePressed(){
-            i++;
-            if(i >= auxText.length){
-                i=0;
-            };
-        };
-        if (mouseIsPressed){
-                text_area.innerHTML = auxText[i];
-                i++;
-            } else {
-                text_area.innerHTML = " ";
-                i++;
-            }
+
 
         // if(text_area.touchStarted() == true) {
         //     i++;
@@ -144,6 +159,5 @@ window.addEventListener('deviceorientation', function(e) {
         //    i++;
         //    text_area.innerHTML = " "; 
         // }, false);
-    };
-//};
+};
 
