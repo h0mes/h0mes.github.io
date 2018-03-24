@@ -72,12 +72,13 @@ function draw(){
         text_area.innerHTML = content_home5[i];
         function touchStarted(){
             i++
+            text_area.innerHTML = content_home5[i];
             if(i >= 10) {
               i = 0; 
             }  
         } 
         function touchEnded(){
-            
+            text_area.innerHTML = content_home5[i];
         }  
         if(forEast.isPlaying() == true){
             forEast.stop()
