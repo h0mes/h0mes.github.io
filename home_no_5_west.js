@@ -1,7 +1,7 @@
 var myBody = document.getElementsByTagName("body");
 
 function success() {
-    myBody[0].style.backgroundColor = "#000000";
+    myBody[0].style.backgroundColor = "#0000FF";
     console.log("hiiiii");
 }
 
