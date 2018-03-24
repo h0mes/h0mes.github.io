@@ -132,19 +132,19 @@ window.addEventListener('deviceorientation', function(e) {
                 text_area.innerHTML = " ";
             }; 
     };
-    if(compassHeading >= 35 && compassHeading < 45){
-        if (mouseIsPressed){
-                text_area.innerHTML = auxText[3];
-            } else {
-                text_area.innerHTML = " ";
-            };
-        if(forEast.isPlaying() == true){
-            forEast.stop();
-        };
-        if(forSouth.isPlaying() == true){
-            forSouth.stop();
-        };
-    };
+    // if(compassHeading >= 35 && compassHeading < 45){
+    //     if (mouseIsPressed){
+    //             text_area.innerHTML = auxText[3];
+    //         } else {
+    //             text_area.innerHTML = " ";
+    //         };
+    //     if(forEast.isPlaying() == true){
+    //         forEast.stop();
+    //     };
+    //     if(forSouth.isPlaying() == true){
+    //         forSouth.stop();
+    //     };
+    // };
         // timer++
         //     if(timer % 120 == 0){
         //         i++;
