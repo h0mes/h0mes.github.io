@@ -68,9 +68,9 @@ window.addEventListener('deviceorientation', function(e) {
     } 
 
  //West by degrees      
-    if(compassHeading >= 225 && compassHeading < 325) {
-        i++
-        text_area.innerHTML = content_home5[i];
+    if(compassHeading >= 225 && compassHeading < 235) {
+        //i++
+        text_area.innerHTML = content_home5[0];
         // function mousePressed(){
         //     i++
         //     text_area.innerHTML = content_home5[i];
@@ -86,39 +86,39 @@ window.addEventListener('deviceorientation', function(e) {
             forSouth.stop()
         }
     }
-    // if(compassHeading >= 235 && compassHeading < 245) {
-    //     text_area.innerHTML = content_home5[1];
-    // }
-    // if(compassHeading >= 245 && compassHeading < 255) {
-    //     text_area.innerHTML = content_home5[2];
-    // }
-    // if(compassHeading >= 255 && compassHeading < 265) {
-    //     text_area.innerHTML = content_home5[3];
-    // }
-    // if(compassHeading >= 265 && compassHeading < 275) {
-    //     text_area.innerHTML = content_home5[4];
-    // }
-    // if(compassHeading >= 275 && compassHeading < 285) {
-    //     text_area.innerHTML = content_home5[5];
-    // }
-    // if(compassHeading >= 285 && compassHeading < 295) {
-    //     text_area.innerHTML = content_home5[6];
-    // }
-    // if(compassHeading >= 295 && compassHeading < 305) {
-    //     text_area.innerHTML = content_home5[7];
-    // }
-    // if(compassHeading >= 305 && compassHeading < 315) {
-    //     text_area.innerHTML = content_home5[8];
-    // }
-    // if(compassHeading >= 315 && compassHeading < 325) {
-    //     text_area.innerHTML = content_home5[9];
-    //     if(forEast.isPlaying() == true){
-    //         forEast.stop()
-    //     }
-    //     if(forSouth.isPlaying() == true){
-    //         forSouth.stop()
-    //     }
-    // }
+    if(compassHeading >= 235 && compassHeading < 245) {
+        text_area.innerHTML = content_home5[1];
+    }
+    if(compassHeading >= 245 && compassHeading < 255) {
+        text_area.innerHTML = content_home5[2];
+    }
+    if(compassHeading >= 255 && compassHeading < 265) {
+        text_area.innerHTML = content_home5[3];
+    }
+    if(compassHeading >= 265 && compassHeading < 275) {
+        text_area.innerHTML = content_home5[4];
+    }
+    if(compassHeading >= 275 && compassHeading < 285) {
+        text_area.innerHTML = content_home5[5];
+    }
+    if(compassHeading >= 285 && compassHeading < 295) {
+        text_area.innerHTML = content_home5[6];
+    }
+    if(compassHeading >= 295 && compassHeading < 305) {
+        text_area.innerHTML = content_home5[7];
+    }
+    if(compassHeading >= 305 && compassHeading < 315) {
+        text_area.innerHTML = content_home5[8];
+    }
+    if(compassHeading >= 315 && compassHeading < 325) {
+        text_area.innerHTML = content_home5[9];
+        if(forEast.isPlaying() == true){
+            forEast.stop()
+        }
+        if(forSouth.isPlaying() == true){
+            forSouth.stop()
+        }
+    }
 
 //north
     if(compassHeading >= 325 || compassHeading < 45){
