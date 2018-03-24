@@ -60,17 +60,17 @@ window.addEventListener('deviceorientation', function(e) {
 
  //"West"  actually east by degrees      
     if(compassHeading >= 45 && compassHeading < 55) {
-        //i++
-        text_area.innerHTML = content_home5[0]; 
+        if(mouseIsPressed){
+            text_area.innerHTML = " ";
+        } else {text_area.innerHTML = content_home5[0];
+        };
         if(forEast.isPlaying() == true){
             forEast.pause();
         };
         if(forSouth.isPlaying() == true){
             forSouth.pause();
         };
-        if(mouseIsPressed){
-            text_area.innerHTML = " "
-        };
+        
     };
     if(compassHeading >= 55 && compassHeading < 65) {
         text_area.innerHTML = content_home5[9];
