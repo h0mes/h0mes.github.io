@@ -38,7 +38,7 @@ window.addEventListener('deviceorientation', function(e) {
     });
 };
 
-//function draw(){
+function draw(){
 //text_area.innerHTML = compassHeading;
 //South 1minute.mp3
     if(compassHeading >= 145 && compassHeading < 225) {
@@ -164,5 +164,5 @@ window.addEventListener('deviceorientation', function(e) {
         //    i++;
         //    text_area.innerHTML = " "; 
         // }, false);
-//};
+};
 
