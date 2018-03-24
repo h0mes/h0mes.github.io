@@ -7,8 +7,8 @@ function success() {
 
 function preload() {
  soundFormats('mp3', 'ogg');
-  forSouth = loadSound('assets/home_no_5_west_1minute.mp3', success);
- forEast = loadSound('assets/home_no_5_west_2minute.mp3');
+  forSouth = loadSound('assets/home_no_5_west_1min.mp3', success);
+ forEast = loadSound('assets/home_no_5_west_2min.mp3');
 };
 
 var text_area;
