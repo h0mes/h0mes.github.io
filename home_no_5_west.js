@@ -38,7 +38,7 @@ window.addEventListener('deviceorientation', function(e) {
     });
 };
 
-function draw(){
+//function draw(){
 //text_area.innerHTML = compassHeading;
 //South 1minute.mp3
     if(compassHeading >= 145 && compassHeading < 225) {
@@ -60,13 +60,17 @@ function draw(){
 
  //"West"  actually east by degrees      
     if(compassHeading >= 45 && compassHeading < 55) {
-        text_area.innerHTML = content_home5[0];
+        //i++
+        text_area.innerHTML = content_home5[0]; 
         if(forEast.isPlaying() == true){
             forEast.pause();
         };
         if(forSouth.isPlaying() == true){
             forSouth.pause();
-        };   
+        };
+        if(mouseIsPressed){
+            text_area.innerHTML = " "
+        };
     };
     if(compassHeading >= 55 && compassHeading < 65) {
         text_area.innerHTML = content_home5[9];
@@ -164,5 +168,4 @@ function draw(){
         //    i++;
         //    text_area.innerHTML = " "; 
         // }, false);
-};
-
+//};
