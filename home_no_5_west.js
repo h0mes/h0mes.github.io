@@ -135,10 +135,9 @@ function draw(){
         //         text_area.innerHTML = auxText[i];
         //     };  
 
-            canvas.touchStarted(){
+        if (mouseIsPressed){
                 text_area.innerHTML = auxText[i];
-            }
-            canvas.touchEnded(){
+            } else {
                 i++;
                 text_area.innerHTML = " ";
             }
