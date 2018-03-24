@@ -33,8 +33,8 @@ timer = 0
 window.addEventListener('deviceorientation', function(e) {
     var alpha = e.alpha;
         if(e.webkitCompassHeading){
-            compassHeading = e.webkitCompassHeading;
-        } else compassHeading = 360 - alpha;
+            compassHeading = e.webkitCompassHeading
+        } else compassHeading = 360 - alpha
     });
 };
 
@@ -104,47 +104,47 @@ window.addEventListener('deviceorientation', function(e) {
     };
 
 //north
-    // if(compassHeading >= 335 && compassHeading < 355){
-    //     if(forEast.isPlaying() == true){
-    //         forEast.stop();
-    //     };
-    //     if(forSouth.isPlaying() == true){
-    //         forSouth.stop();
-    //     };
+    if(compassHeading >= 335 && compassHeading < 355){
+        if(forEast.isPlaying() == true){
+            forEast.stop();
+        };
+        if(forSouth.isPlaying() == true){
+            forSouth.stop();
+        };
         
-    //     if (mouseIsPressed){
-    //             text_area.innerHTML = auxText[0];
-    //         } else {
-    //             text_area.innerHTML = " ";
-    //         };
-    // };
-    // if(compassHeading >= 355 || compassHeading < 15){
-    //     if (mouseIsPressed){
-    //             text_area.innerHTML = auxText[1];
-    //         } else {
-    //             text_area.innerHTML = " ";
-    //         };
-    // };
-    // if(compassHeading >= 15 && compassHeading < 35){
-    //     if (mouseIsPressed){
-    //             text_area.innerHTML = auxText[2];
-    //         } else {
-    //             text_area.innerHTML = " ";
-    //         }; 
-    // };
-    // if(compassHeading >= 35 && compassHeading < 45){
-    //     if (mouseIsPressed){
-    //             text_area.innerHTML = auxText[3];
-    //         } else {
-    //             text_area.innerHTML = " ";
-    //         };
-    //     if(forEast.isPlaying() == true){
-    //         forEast.stop();
-    //     };
-    //     if(forSouth.isPlaying() == true){
-    //         forSouth.stop();
-    //     };
-    // };
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[0];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
+    if(compassHeading >= 355 || compassHeading < 15){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[1];
+            } else {
+                text_area.innerHTML = " ";
+            };
+    };
+    if(compassHeading >= 15 && compassHeading < 35){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[2];
+            } else {
+                text_area.innerHTML = " ";
+            }; 
+    };
+    if(compassHeading >= 35 && compassHeading < 45){
+        if (mouseIsPressed){
+                text_area.innerHTML = auxText[3];
+            } else {
+                text_area.innerHTML = " ";
+            };
+        if(forEast.isPlaying() == true){
+            forEast.stop();
+        };
+        if(forSouth.isPlaying() == true){
+            forSouth.stop();
+        };
+    };
         // timer++
         //     if(timer % 120 == 0){
         //         i++;
