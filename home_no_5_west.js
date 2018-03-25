@@ -83,7 +83,7 @@ if(compassHeading >= 45 && compassHeading < 65){
             forWest.pause();
     };
     if (mouseIsPressed){
-        text_area.innerHTML = text(auxText[0], 5, 5);
+        text(auxText[0], 5, 5);
         } else {
         text_area.innerHTML = " ";
     };
