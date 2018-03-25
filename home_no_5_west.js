@@ -17,7 +17,7 @@ var i;
 var compassHeading;
 var auxText = [];
 var timer;
-var vid1;
+//var vid1;
 
 function setup() {
     canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -30,7 +30,7 @@ auxText = ["01.mov: This is how home number five was the first time I saw it. It
 text_area = document.getElementById("compass_content");
 i = 0
 timer = 0
-vid1 = createVideo(['assets/01.mov'], vidLoad);
+//vid1 = createVideo(['assets/01.mov'], vidLoad);
 // var clicky = function mousePressed(){
 //              i++;
 //              text_area.innerHTML = auxText[i];
@@ -72,7 +72,7 @@ function draw(){
     };
 
  //East by degrees - prose  
- if(compassHeading >= 45 && compassHeading < 135)  
+ if(compassHeading >= 45 && compassHeading < 135){  
         if(forNorth.isPlaying() == true){
             forNorth.pause();
         };
@@ -103,6 +103,7 @@ function draw(){
                 text_area.innerHTML = " ";
             };
     // };
+        };
     };
 
 //South poem by degrees
@@ -151,5 +152,5 @@ function draw(){
             forNorth.pause();
         };
     };
-};
+
 
