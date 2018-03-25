@@ -95,9 +95,10 @@ if(compassHeading >= 45 && compassHeading < 65){
     };
     if (mouseIsPressed){
         text_area.innerHTML = auxText[0];
-        image(jpg01, 10, 10);
+        image(jpg01, 10, 10, 50);
         } else {
         text_area.innerHTML = " ";
+        rect(9, 9, 50, 100)
     };
 };
 if(compassHeading >= 65 && compassHeading < 85){
