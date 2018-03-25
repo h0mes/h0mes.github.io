@@ -17,6 +17,7 @@ var i;
 var compassHeading;
 var auxText = [];
 var timer;
+var vid1;
 
 function setup() {
     canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -29,6 +30,7 @@ auxText = ["01.mov: This is how home number five was the first time I saw it. It
 text_area = document.getElementById("compass_content");
 i = 0
 timer = 0
+vid1 = createVideo(['assets/01.mov'], vidLoad);
 // var clicky = function mousePressed(){
 //              i++;
 //              text_area.innerHTML = auxText[i];
@@ -54,6 +56,10 @@ window.addEventListener('deviceorientation', function(e) {
         //});
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
+function vidLoad(){
+    vid1.hide()
+}
+
 
 function draw(){
 //text_area.innerHTML = compassHeading;
@@ -131,6 +137,7 @@ function draw(){
         
         if (mouseIsPressed){
                 text_area.innerHTML = auxText[0];
+                vid1.play();
             } else {
                 text_area.innerHTML = " ";
             };
