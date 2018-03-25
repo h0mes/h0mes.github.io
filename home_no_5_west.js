@@ -56,16 +56,16 @@ window.addEventListener('deviceorientation', function(e) {
         //});
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
-function vidLoad(){
-    vid1.hide()
-}
+// function vidLoad(){
+//     vid1.hide()
+// }
 
 
 function draw(){
 //text_area.innerHTML = compassHeading;
 //South forSouth.ogg 
     if(compassHeading >= 145 && compassHeading < 225) {
-        //forSouth.play();
+        forSouth.play();
         vid1.play();
         if(forEast.isPlaying() == true){
             forEast.stop();
