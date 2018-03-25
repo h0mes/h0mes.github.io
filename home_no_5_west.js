@@ -12,10 +12,10 @@ function preload() {
 };
 
 var text_area;
-var content_home5 = [];
+var content_home5;
 var i;
 var compassHeading;
-var auxText = [];
+var auxText;
 var timer;
 //var vid1;
 
@@ -72,39 +72,46 @@ function draw(){
     };
 
  //East by degrees - prose  
- if(compassHeading >= 45 && compassHeading < 135){  
-        if(forNorth.isPlaying() == true){
+if(compassHeading >= 45 && compassHeading < 65){  
+    if(forNorth.isPlaying() == true){
             forNorth.pause();
-        };
-        if(forWest.isPlaying() == true){
-            forWest.pause();
-        };
-        if (mouseIsPressed){
-                text_area.innerHTML = auxText[0];
-            } else {
-                text_area.innerHTML = " ";
-            };
-        if (mouseIsPressed){
-                text_area.innerHTML = auxText[1];
-            } else {
-                text_area.innerHTML = " ";
-            };
-    // if(compassHeading >= 15 && compassHeading < 35){
-        if (mouseIsPressed){
-                text_area.innerHTML = auxText[2];
-            } else {
-                text_area.innerHTML = " ";
-            }; 
-    // };
-    // if(compassHeading >= 35 && compassHeading < 45){
-        if (mouseIsPressed){
-                text_area.innerHTML = auxText[3];
-            } else {
-                text_area.innerHTML = " ";
-            };
-    // };
-        };
     };
+    if(forWest.isPlaying() == true){
+            forWest.pause();
+    };
+    if (mouseIsPressed){
+        text_area.innerHTML = auxText[0];
+        } else {
+        text_area.innerHTML = " ";
+    };
+};
+if(compassHeading >= 65 && compassHeading < 85){
+    if (mouseIsPressed){
+        text_area.innerHTML = auxText[1];
+        } else {
+        text_area.innerHTML = " ";
+        };
+};
+if(compassHeading >= 85 && compassHeading < 105){
+    if (mouseIsPressed){
+        text_area.innerHTML = auxText[2];
+        } else {
+        text_area.innerHTML = " ";
+        }; 
+};
+if(compassHeading >= 105 && compassHeading < 125){
+    if (mouseIsPressed){
+        text_area.innerHTML = auxText[3];
+        } else {
+        text_area.innerHTML = " ";
+        };
+    if(forNorth.isPlaying() == true){
+            forNorth.pause();
+    };
+    if(forWest.isPlaying() == true){
+            forWest.pause();
+    };
+};
 
 //South poem by degrees
     if(compassHeading >= 135 && compassHeading < 145) {
@@ -152,5 +159,5 @@ function draw(){
             forNorth.pause();
         };
     };
-
+};
 
