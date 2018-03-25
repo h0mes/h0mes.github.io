@@ -84,7 +84,7 @@ if(compassHeading >= 45 && compassHeading < 65){
             forWest.pause();
     };
     if (mouseIsPressed){
-        text(auxText0, 5, 5);
+        text("01.mov: This is how home number five was the first time I saw it. It’s a bungalow, a low-rise house with a veranda and a small loft. The word bungalow comes from the Hindi word for “Bengali,”  the people of Bangladesh, where this architectural style originated in the 15th century. The person who owned this house probably wasn’t aware of its etymology." , 5, 5);
         } else {
         text_area.innerHTML = " ";
     };
