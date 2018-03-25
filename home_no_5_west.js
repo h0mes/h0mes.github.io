@@ -94,45 +94,45 @@ if(compassHeading >= 45 && compassHeading < 65){
     };
     if (mouseIsPressed){
         text_area.innerHTML = auxText[0];
-        image(jpg01, 20, 10, 450, 337);
+        image(jpg01, 20, 10, 700, 394);
         } else {
         text_area.innerHTML = " ";
         fill(0, 0, 255);
         noStroke();
-        rect(19, 9, 451, 338);
+        rect(19, 9, 701, 395);
     };
 };
 if(compassHeading >= 65 && compassHeading < 85){
     if (mouseIsPressed){
         text_area.innerHTML = auxText[1];
-        image(jpg02, 20, 10, 450, 337);
+        image(jpg02, 20, 10, 700, 394);
         } else {
         text_area.innerHTML = " ";
         fill(0, 0, 255);
         noStroke();
-        rect(19, 9, 451, 338);
+        rect(19, 9, 701, 395);
         };
 };
 if(compassHeading >= 85 && compassHeading < 105){
     if (mouseIsPressed){
         text_area.innerHTML = auxText[2];
-        image(jpg03, 20, 10, 450, 337);
+        image(jpg03, 20, 10, 700, 394);
         } else {
         text_area.innerHTML = " ";
         fill(0, 0, 255);
         noStroke();
-        rect(19, 9, 451, 338);
+        rect(19, 9, 701, 395);
         }; 
 };
 if(compassHeading >= 105 && compassHeading < 125){
     if (mouseIsPressed){
         text_area.innerHTML = auxText[3];
-        image(jpg04, 20, 10, 450, 337);
+        image(jpg04, 20, 10, 700, 394);
         } else {
         text_area.innerHTML = " ";
         fill(0, 0, 255);
         noStroke();
-        rect(19, 9, 451, 338);
+        rect(19, 9, 701, 395);
         };
     if(forNorth.isPlaying() == true){
             forNorth.pause();
