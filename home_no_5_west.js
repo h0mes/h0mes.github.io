@@ -1,5 +1,9 @@
 var myBody = document.getElementsByTagName("body");
 
+function vidLoad(){
+    vid1.hide()
+}
+
 function success() {
     myBody[0].style.backgroundColor = "#0000FF";
     console.log("hiiiii");
@@ -30,7 +34,7 @@ auxText = ["01.mov: This is how home number five was the first time I saw it. It
 text_area = document.getElementById("compass_content");
 i = 0
 timer = 0
-//vid1 = createVideo(['assets/01.mov'], vidLoad);
+vid1 = createVideo(['assets/01.mov'], vidLoad);
 // var clicky = function mousePressed(){
 //              i++;
 //              text_area.innerHTML = auxText[i];
@@ -56,16 +60,15 @@ window.addEventListener('deviceorientation', function(e) {
         //});
     //}).catch(function(errorMessage) {
         //console.log('device orientation functions not supported :*(');
-// function vidLoad(){
-//     vid1.hide()
-// }
+
 
 
 function draw(){
 //North - 1min.mp3
     if(compassHeading >= 335 || compassHeading < 45){
-            forNorth.play();
+            //forNorth.play();
             text_area.innerHTML = " ";
+            vid1.play();
         if(forWest.isPlaying() == true){
             forWest.pause();
         };       
