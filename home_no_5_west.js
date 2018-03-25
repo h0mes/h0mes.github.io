@@ -68,7 +68,9 @@ function draw(){
     if(compassHeading >= 335 || compassHeading < 45){
             //forNorth.play();
             text_area.innerHTML = " ";
+        if(mouseIsPressed == true) {
             vid1.play();
+        };
         if(forWest.isPlaying() == true){
             forWest.pause();
         };       
