@@ -66,19 +66,19 @@ function draw(){
 //South forSouth.ogg 
     if(compassHeading >= 145 && compassHeading < 225) {
         forSouth.play();
-        vid1.play();
+        text_area.innerHTML = " "
+        // vid1.play();
         if(forEast.isPlaying() == true){
             forEast.stop();
-            text_area.innerHTML = " "
         };
     };
 
 //"East" actually west forEast.mp3(2minutes)
     if(compassHeading >= 225 && compassHeading < 335) {
         forEast.play();
+        text_area.innerHTML = " "
         if(forSouth.isPlaying() == true){
             forSouth.stop();
-            text_area.innerHTML = " "
         };
     };
 
