@@ -35,6 +35,7 @@ function setup() {
     text_area = document.getElementById("compass_content");
     i = 0;
     timer = 0;
+    var auxText0 = JSON.stringify(auxText[0])
 // vid1 = createVideo(['assets/01.mov'], vidLoad);
 // var clicky = function mousePressed(){
 //              i++;
@@ -83,7 +84,7 @@ if(compassHeading >= 45 && compassHeading < 65){
             forWest.pause();
     };
     if (mouseIsPressed){
-        text(auxText[0], 5, 5);
+        text(auxText0, 5, 5);
         } else {
         text_area.innerHTML = " ";
     };
