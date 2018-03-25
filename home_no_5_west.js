@@ -65,7 +65,8 @@ function draw(){
 //text_area.innerHTML = compassHeading;
 //South forSouth.ogg 
     if(compassHeading >= 145 && compassHeading < 225) {
-        forSouth.play();
+        //forSouth.play();
+        vid1.play();
         if(forEast.isPlaying() == true){
             forEast.stop();
             text_area.innerHTML = " "
@@ -137,7 +138,6 @@ function draw(){
         
         if (mouseIsPressed){
                 text_area.innerHTML = auxText[0];
-                vid1.play();
             } else {
                 text_area.innerHTML = " ";
             };
