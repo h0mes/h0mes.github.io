@@ -61,7 +61,7 @@ window.addEventListener('deviceorientation', function(e) {
     var alpha = e.alpha;
         if(e.webkitCompassHeading){
             compassHeading = e.webkitCompassHeading;
-        } else compassHeading = alpha;
+        } else compassHeading = 360 - alpha;
     });
 };
         //deviceOrientation.listen(function() {
