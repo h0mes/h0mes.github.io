@@ -76,14 +76,24 @@ window.addEventListener('deviceorientation', function(e) {
 
 function draw(){
 //North - 1min.mp3
-    if(compassHeading >= 335 || compassHeading < 45){
+    if(compassHeading >= 335 || compassHeading < 25){
             forNorth.play();
             text_area.innerHTML = " ";
         if(forWest.isPlaying() == true){
             forWest.stop();
         };       
     };
-
+if(compassHeading >= 25 && compassHeading < 45){
+        if (mouseIsPressed){
+        text_area.innerHTML = auxText[2];
+        image(jpg03, 20, 10, 700, 394);
+        } else {
+        text_area.innerHTML = " ";
+        fill(0, 0, 255);
+        noStroke();
+        rect(19, 9, 701, 395);
+        }; 
+}
  //East by degrees - prose  
 if(compassHeading >= 45 && compassHeading < 65){  
     if(forNorth.isPlaying() == true){
@@ -96,7 +106,7 @@ if(compassHeading >= 45 && compassHeading < 65){
         text_area.innerHTML = auxText[0];
         image(jpg01, 20, 10, 700, 394);
         } else {
-        text_area.innerHTML = " ";
+        text_area.innerHTML = content_home5[0];
         fill(0, 0, 255);
         noStroke();
         rect(19, 9, 701, 395);
@@ -107,7 +117,7 @@ if(compassHeading >= 65 && compassHeading < 85){
         text_area.innerHTML = auxText[1];
         image(jpg02, 20, 10, 700, 394);
         } else {
-        text_area.innerHTML = " ";
+        text_area.innerHTML = content_home5[1];
         fill(0, 0, 255);
         noStroke();
         rect(19, 9, 701, 395);
@@ -115,25 +125,17 @@ if(compassHeading >= 65 && compassHeading < 85){
 };
 if(compassHeading >= 85 && compassHeading < 105){
     if (mouseIsPressed){
-        text_area.innerHTML = auxText[2];
-        image(jpg03, 20, 10, 700, 394);
-        } else {
-        text_area.innerHTML = " ";
-        fill(0, 0, 255);
-        noStroke();
-        rect(19, 9, 701, 395);
-        }; 
-};
-if(compassHeading >= 105 && compassHeading < 125){
-    if (mouseIsPressed){
         text_area.innerHTML = auxText[3];
         image(jpg04, 20, 10, 700, 394);
         } else {
-        text_area.innerHTML = " ";
+        text_area.innerHTML = content_home5[2];
         fill(0, 0, 255);
         noStroke();
         rect(19, 9, 701, 395);
         };
+};
+if(compassHeading >= 105 && compassHeading < 125){
+    text_area.innerHTML = content_home5[3];
     if(forNorth.isPlaying() == true){
             forNorth.pause();
     };
@@ -143,31 +145,19 @@ if(compassHeading >= 105 && compassHeading < 125){
 };
 
 //South poem by degrees
-    if(compassHeading >= 135 && compassHeading < 145) {
-        text_area.innerHTML = content_home5[0];
-    }
-    if(compassHeading >= 145 && compassHeading < 155) {
-        text_area.innerHTML = content_home5[1];
-    };
-    if(compassHeading >= 155 && compassHeading < 165) {
-        text_area.innerHTML = content_home5[2];
-    };
-    if(compassHeading >= 165 && compassHeading < 175) {
-        text_area.innerHTML = content_home5[3];
-    };
-    if(compassHeading >= 175 && compassHeading < 185) {
+    if(compassHeading >= 135 && compassHeading < 155) {
         text_area.innerHTML = content_home5[4];
-    };
-    if(compassHeading >= 185 && compassHeading < 195) {
+    }
+    if(compassHeading >= 155 && compassHeading < 175) {
         text_area.innerHTML = content_home5[5];
     };
-    if(compassHeading >= 195 && compassHeading < 205) {
+    if(compassHeading >= 175 && compassHeading < 195) {
         text_area.innerHTML = content_home5[6];
     };
-    if(compassHeading >= 205 && compassHeading < 215) {
+    if(compassHeading >= 195 && compassHeading < 205) {
         text_area.innerHTML = content_home5[7];
     };
-    if(compassHeading >= 215 && compassHeading < 225) {
+    if(compassHeading >= 205 && compassHeading < 225) {
         text_area.innerHTML = content_home5[8];
     };
     if(compassHeading >= 225 && compassHeading < 235) {
