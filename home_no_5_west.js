@@ -184,7 +184,7 @@ if(compassHeading >= 105 && compassHeading < 125){
     if(compassHeading >= 235 && compassHeading < 335) {
         forWest.play();
         timer++;
-        if(timer % 60 = 0){
+        if(timer % 60 == 0){
             i++;
         }
         if(i >= forWest.duration()){
