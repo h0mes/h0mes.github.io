@@ -142,7 +142,7 @@ if(compassHeading >= 55 && compassHeading < 65){
 };
     // if(compassHeading >= 65 && compassHeading < 75) {
     //           text_area.innerHTML = content_home5[0];  
-    };
+   // };
     if(compassHeading >= 75 && compassHeading < 85) {
               text_area.innerHTML = content_home5[0];  
     };
