@@ -140,36 +140,36 @@ if(compassHeading >= 55 && compassHeading < 65){
         rect(19, 9, 701, 395);
         };
 };
-    if(compassHeading >= 65 && compassHeading < 75) {
-              text_area.innerHTML = content_home5[0];  
+    // if(compassHeading >= 65 && compassHeading < 75) {
+    //           text_area.innerHTML = content_home5[0];  
     };
     if(compassHeading >= 75 && compassHeading < 85) {
-              text_area.innerHTML = content_home5[1];  
+              text_area.innerHTML = content_home5[0];  
     };
     if(compassHeading >= 85 && compassHeading < 95) {
-              text_area.innerHTML = content_home5[2];  
+              text_area.innerHTML = content_home5[1];  
     };
     if(compassHeading >= 95 && compassHeading < 105) {
-              text_area.innerHTML = content_home5[3];  
+              text_area.innerHTML = content_home5[2];  
     };
     if(compassHeading >= 105 && compassHeading < 115) {
-        text_area.innerHTML = content_home5[4];
+        text_area.innerHTML = content_home5[3];
     };
     if(compassHeading >= 115 && compassHeading < 125) {
-        text_area.innerHTML = content_home5[5];
+        text_area.innerHTML = content_home5[4];
     };
 //South poem by degrees
     if(compassHeading >= 125 && compassHeading < 135) {
-        text_area.innerHTML = content_home5[6];    
+        text_area.innerHTML = content_home5[5];    
     };
     if(compassHeading >= 135 && compassHeading < 145) {
-        text_area.innerHTML = content_home5[7];
+        text_area.innerHTML = content_home5[6];
     };
     if(compassHeading >= 145 && compassHeading < 155) {
-        text_area.innerHTML = content_home5[8];
+        text_area.innerHTML = content_home5[7];
     };
     if(compassHeading >= 155 && compassHeading < 165) {
-        text_area.innerHTML = content_home5[9];
+        text_area.innerHTML = content_home5[8];
         if(forWest.isPlaying() == true){
             forWest.stop();
         };
@@ -181,7 +181,6 @@ if(compassHeading >= 55 && compassHeading < 65){
 //West forWest.mp3(2minutes)
     if(compassHeading >= 235 && compassHeading < 335) {
         forWest.play();
-        timer=0
         timer++;
         if(timer % 60 == 0){
             i++;
